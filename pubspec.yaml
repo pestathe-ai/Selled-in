@@ -1,0 +1,40 @@
+name: selled_in
+description: "Selled-in: scrivi l'annuncio una volta, vendilo ovunque."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.5.3
+  path_provider: ^2.1.5
+  image_picker: ^1.1.2
+  share_plus: ^13.0.0
+  cross_file: ^0.3.4
+  webview_flutter: ^4.13.0
+  webview_flutter_android: ^4.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Sora
+      fonts:
+        - asset: assets/fonts/Sora.ttf
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#1D3A8A"
+  adaptive_icon_foreground: "assets/icon/foreground.png"
+  min_sdk_android: 24
+  remove_alpha_ios: true
